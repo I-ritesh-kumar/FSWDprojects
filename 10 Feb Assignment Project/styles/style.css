@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: #ffffff;
+}
+
+/* -------------- HEAD -------------- */
+.head-container ul{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 43px;
+    padding-right: 29px;
+    font-size: 1.4rem;
+}
+img[alt="menu-img"]{
+    height: 34px;
+    display: none;
+}
+.head-container ul li{
+    list-style: none;
+}
+.head-container ul li a{
+    text-decoration: none;
+}
+.head-container ul li:first-child a{
+    background-color: #6464E0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/* ----------------- MAIN ------------------ */
+.main-container{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    justify-content: center;
+}
+img[alt="hello"]{
+    width: 45px;
+}
+img[alt="pc-img"]{
+    width: 30vw;
+}
+.main-line-1{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.main-line-1 h3{
+    font-size: 2.1rem;
+}
+.main-line-2 h1{
+    font-size: 3.6rem;
+}
+.main-line-2 h2{
+    color: #C5C559;
+    font-size: 2.4rem;
+}
+
+/* -------------- PROJECT ------------------ */
+.pr-content-container{
+    margin-top: 63px;
+    font-size: 29px;
+
+}
+.pr-heading-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.underline{
+    width: 155px;
+    height: 13px;
+    background-color: #0000ff;
+    border-radius: 11px;
+}
+img[alt="pr-img"]{
+    width: 200px;
+    height: 200px;
+}
+.pr-container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin-top: 2em;
+}
+
+/* ------------- CONTACT -------------- */
+img[alt="icon-img"]{
+    height: 29px;
+    width: 29px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+.contact-text{
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+.social-icons{
+    margin-top: 0.4em;
+    margin-bottom: 3em;
+    display: flex;
+    gap: 14px;
+}
+
+/* for frame 2 */
+@media screen and (max-width: 576px){
+    .head-container ul{
+        display: none;
+    }
+    img[alt="menu-img"]{
+        display: block;
+        margin: 1.0em;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    .main-line-1{
+        flex-direction: column;
+    }
+    .main-line-2 h2{
+        text-align: center;
+    }
+    img[alt="pr-img"]{
+        width: 250px;
+        height: 250px;
+    }
+    .pr-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
